@@ -6,6 +6,7 @@ port = 9988
 
 def setupServer():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)   #reuse address
     print("Socket created.")
     try:
         s.bind((host, port))
@@ -29,7 +30,7 @@ def dataTransfer(conn):
             s.close()
             break
         elif data == 'test':
-            reply = 1
+            reply = '1'
         else:
             reply = 'Unknown Command'
         conn.sendall(reply)
