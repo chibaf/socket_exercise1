@@ -10,6 +10,8 @@ s.connect((host, port))
 while True:
     command = input("Enter string: ")
     s.send(str.encode(command))
+    if command == 'stop':
+      break
 #    reply = s.recv(1024)
 #    print(reply)
 
