@@ -5,6 +5,10 @@ socket_server2.py: read string in socket
 
 socket_client2.py: send string using socket
 
+socket_server3.py: read data in socket 
+
+socket_client3.py: send data using socket
+
 t1.py,t2.py: 
 networking - ConnectionRefusedError: [Errno 111] Connection refused - Ask Ubuntu 
 https://askubuntu.com/questions/1332807/connectionrefusederror-errno-111-connection-refused
