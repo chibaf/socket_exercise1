@@ -26,8 +26,11 @@ def dataTransfer(conn):
         data = conn.recv(1024) # receive the data
         data = data.decode('utf-8')
         print(data)
+        if data == "stop":
+          break
 #        conn.sendall(reply)
     conn.close()
+    exit()
 
 s = setupServer()
 
