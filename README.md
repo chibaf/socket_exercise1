@@ -4,7 +4,7 @@ sending data to another RasPi via socket
 
 socket on tcp/ip
 
-## sending data to another RasPi via socket 
+# sending data to another RasPi via socket 
 
 socket_server2.py: read string in socket 
 
@@ -15,7 +15,7 @@ socket_server3.py: read data in socket
 socket_client3.py: send data using socket
 
 
-##ref:
+# ref:
 
 t1.py,t2.py: 
 networking - ConnectionRefusedError: [Errno 111] Connection refused - Ask Ubuntu 
