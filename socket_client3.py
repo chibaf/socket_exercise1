@@ -17,9 +17,10 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # establish socket connec
 s.connect((host, port))
 
 flags=[0]*16
+i=0
 while True:   # sending flags via socket
     sleep(2)
+    i=i+1
+    flags[0]=i % 10
     line=mkline(flags)
     s.send(str.encode(line))
-
-s.close()
