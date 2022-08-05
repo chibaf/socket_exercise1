@@ -1,4 +1,4 @@
-# socket_exercise1
+# socket_exercise_1
 
 sending data to another RasPi via socket
 
