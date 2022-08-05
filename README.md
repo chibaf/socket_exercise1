@@ -1,4 +1,7 @@
 # socket_exercise1
+
+sending data to another RasPi via socket
+
 socket on tcp/ip
 
 socket_server2.py: read string in socket 
