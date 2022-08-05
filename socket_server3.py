@@ -25,12 +25,8 @@ def dataTransfer(conn):  # receive data from client via socket
     while True:
         data = conn.recv(1024) # receive the data
         data = data.decode('utf-8')
-        if data == "stop":
-          break
-        flags = [str(val) for val in data.split(",")]  # devide line into flags
+        flags = [int(val) for val in data.split(",")]  # devide line into flags
         print(flags)
-    conn.close()
-    exit()
 
 s = setupServer()  # start socket server
 
